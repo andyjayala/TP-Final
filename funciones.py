@@ -49,3 +49,11 @@ def medir_tiempo_y_memoria(func, *args):
     memoria_actual, memoria_maxima = tracemalloc.get_traced_memory()
     tracemalloc.stop()
     return resultado_de_la_funcion, tiempo_transcurrido, memoria_actual, memoria_maxima
+
+# Función para medir tiempo y memoria de la creación de un conjunto o lista
+def medir_estructura(tipo_estructura, datos, etiqueta):
+    estructura, tiempo, memoria_actual, memoria_maxima = medir_tiempo_y_memoria(tipo_estructura, datos)
+    nombre = "conjunto" if tipo_estructura == set else "lista"
+    print(f"Crear {nombre} de {etiqueta}: {tiempo:.6f} seg, la memoria actual es: {memoria_actual} bytes y el pico de memoria: {memoria_maxima} bytes")
+    print("_" * 40)
+    return estructura
