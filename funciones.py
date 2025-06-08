@@ -3,7 +3,9 @@ import tracemalloc
 
 # Parte 1: Diferenciar entre buscar en una lista y un conjunto
 def buscar_en_lista(nombre, lista_clientes):
-    return nombre in lista_clientes
+    for nombre_cliente in lista_clientes:
+        if nombre == nombre_cliente:
+            return True
 
 def buscar_en_conjunto(nombre, conjunto_clientes):
     return nombre in conjunto_clientes
