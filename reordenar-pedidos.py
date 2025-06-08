@@ -6,7 +6,7 @@ from funciones import invertir_orden_reversed, invertir_con_bucle, invertir_orde
 # Objetivo: Invertir la lista de pedidos.
 
 
-# Creamos un grupo de datos definidos por la cantidad de elementos, por cada uno hay: lista, conjunto, etiqueta
+# Creamos un grupo de datos definidos por la cantidad de elementos, por cada uno hay: lista, etiqueta
 grupos_de_datos = [
     (lista_pedidos_1000, "1000"),
     (lista_pedidos_10000, "10000"),

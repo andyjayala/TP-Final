@@ -5,7 +5,7 @@ from funciones import suma_bucle, suma_con_recursividad, suma_con_sum,  medir_ti
 # Problema: Cada pedido tiene una cantidad de productos. Queremos saber cuántos productos se vendieron en total.
 # Objetivo: Sumar todas las cantidades.
 
-# Creamos un grupo de datos definidos por la cantidad de elementos, por cada uno hay: lista, conjunto, etiqueta
+# Creamos un grupo de datos definidos por la cantidad de elementos, por cada uno hay: lista, etiqueta
 grupos_de_datos = [
     (lista_cantidad_productos_100, "100"),
     (lista_cantidad_productos_1000, "1000"),
@@ -13,7 +13,7 @@ grupos_de_datos = [
     (lista_cantidad_productos_100000, "100000")
 ]
 
-# Recorremos cada elemento (lista, conjunto, etiqueta) del grupo de datos
+# Recorremos cada elemento (lista, etiqueta) del grupo de datos
 for lista_cantidad_productos, etiqueta in grupos_de_datos:
     # Medimos la lista de cada uno de los grupos de datos
     resultado_funcion, tiempo_lista, memoria_actual_lista, memoria_maxima_lista = medir_tiempo_y_memoria(suma_bucle, lista_cantidad_productos)
