@@ -1,3 +1,6 @@
+import time
+import tracemalloc
+
 # Parte 1: Diferenciar entre buscar en una lista y un conjunto
 def buscar_en_lista(nombre, lista_clientes):
     return nombre in lista_clientes
@@ -33,3 +36,14 @@ def invertir_con_bucle(lista):
     for i in range(len(lista)-1, -1, -1):
         nueva_lista.append(lista[i])
     return nueva_lista
+
+# Función para medir tiempo y memoria de la ejecución de cada función generada anteriormente
+def medir_tiempo_y_memoria(func, *args):
+    tracemalloc.start()
+    tiempo_de_inicio = time.time()
+    resultado_de_la_funcion = func(*args)
+    tiempo_de_finalización = time.time() 
+    tiempo_transcurrido = tiempo_de_finalización - tiempo_de_inicio
+    memoria_actual, memoria_maxima = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
+    return resultado_de_la_funcion, tiempo_transcurrido, memoria_actual, memoria_maxima
