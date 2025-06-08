@@ -17,7 +17,7 @@ grupos_de_datos = [
 for lista_pedidos, etiqueta in grupos_de_datos:
     # Medimos la lista de cada uno de los grupos de datos
     resultado_lista, tiempo_lista, memoria_actual_lista, memoria_maxima_lista = medir_tiempo_y_memoria(invertir_orden_reversed, lista_pedidos)
-    print(f"El reordenamiento con reveresed de una lista con {etiqueta} elementos conlleva: {tiempo_lista:.6f} seg, pico de memoria: {memoria_maxima_lista} bytes")
+    print(f"El reordenamiento con reversed de una lista con {etiqueta} elementos conlleva: {tiempo_lista:.6f} seg, pico de memoria: {memoria_maxima_lista} bytes")
 
     resultado_lista, tiempo_lista, memoria_actual_lista, memoria_maxima_lista = medir_tiempo_y_memoria(invertir_con_bucle, lista_pedidos)
     print(f"El reordenamiento con bucle de una lista con {etiqueta} elementos conlleva: {tiempo_lista:.6f} seg, pico de memoria: {memoria_maxima_lista} bytes")
