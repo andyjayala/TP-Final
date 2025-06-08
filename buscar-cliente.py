@@ -1,4 +1,3 @@
-import time
 from datos import lista_clientes_1000, lista_clientes_10000, lista_clientes_100000,conjunto_clientes_1000, conjunto_clientes_10000, conjunto_clientes_100000
 from funciones import buscar_en_lista, buscar_en_conjunto, medir_tiempo_y_memoria
 
