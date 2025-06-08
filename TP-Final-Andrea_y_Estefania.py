@@ -47,3 +47,45 @@ import time
 
 # print("Juan en lista") if "Juan" in probando_set else print("no está")
 
+
+# Parte 3: Invertir la lista de pedidos
+# Problema: Clara quiere armar los paquetes en orden inverso al que fueron pedidos (para que el último pedido salga primero).
+# Objetivo: Invertir la lista de pedidos.
+# Comparación: Slicing ([::-1]) vs reversed() vs bucle manual.
+# Resultado: [::-1] es el más rápido.
+# Analogía: Dar vuelta una pila de hojas a mano (bucle) vs tener una bandeja que ya invierte el orden automáticamente ([::-1]).
+
+lista_pedidos = ["harina", "arroz", "fideos", "azucar", "sal", "arvejas","harina", "arroz", "fideos", "azucar", "sal", "arvejas"]*1000
+
+# start_reversed= time.time()
+def invertir_orden_reversed(lista_pedidos):
+    nueva_lista = list(reversed(lista_pedidos))
+    return nueva_lista
+# end_reversed = time.time()
+
+# start_slicing= time.time()
+def invertir_orden_slicing(lista_pedidos):
+    return lista_pedidos[::-1]
+# end_slicing = time.time()
+
+# start_bucle= time.time()
+nueva_lista=[]
+def invertir_con_bucle(lista_pedidos):
+    for i in range (len(lista_pedidos)-1, -1, -1):
+        nueva_lista.append(lista_pedidos[i])
+    return nueva_lista
+# end_bucle = time.time()
+
+start_reversed= time.time()
+invertir_orden_reversed(lista_pedidos)
+end_reversed = time.time()
+
+start_slicing= time.time()
+invertir_orden_slicing(lista_pedidos)
+end_slicing = time.time()
+
+start_bucle= time.time()
+invertir_con_bucle(lista_pedidos)
+end_bucle = time.time()
+
+print(f"Código con reversed: {end_reversed-start_reversed:.20f}, código con slicing: {end_slicing-start_slicing:.20f} y código con bucle: {end_bucle-start_bucle:.20f}")
