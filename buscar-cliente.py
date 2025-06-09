@@ -5,9 +5,6 @@ from funciones import buscar_en_lista, buscar_en_conjunto, medir_tiempo_y_memori
 # Problema: Tiene una lista de nombres de clientes que hicieron pedidos hoy.
 # Objetivo: Saber si nombre está en la lista.
 
-# Obtener lista sin duplicados para comparar la memoria al momento de creación de las listas y los conjuntos
-lista_clientes_unicos_100000 = list(set(lista_clientes_100000))
-
 # Obtener listas sin duplicados para cada tamaño
 lista_clientes_unicos_1000 = list(set(lista_clientes_1000))
 lista_clientes_unicos_10000 = list(set(lista_clientes_10000))
