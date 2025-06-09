@@ -34,5 +34,6 @@ Este trabajo práctico integrador se enfoca en el análisis de algoritmos, combi
 
 Aquí podrán encontrar el enlace al video donde presentamos el trabajo y explicamos los principales hallazgos:
 
-[Enlace al video](https://drive.google.com/file/d/1prxS1fvDpTXq0edL-nYUSIlfLl_b7vcC/view?usp=sharing)
-
+[Enlace al video en drive](https://drive.google.com/file/d/1prxS1fvDpTXq0edL-nYUSIlfLl_b7vcC/view?usp=sharing)
+[Enlace al video subido a youtube](https://youtu.be/1Ua_WLfRYYw?si=zA8L_8HNJU_cc5Z5)
+[Enlace a carpeta de drive](https://drive.google.com/drive/folders/1wRg2QbQn6peRehYQuNvTYDXk5RJjlYmH?usp=sharing)
